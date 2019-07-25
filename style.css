@@ -387,7 +387,7 @@
 	background-image: url('images/main.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 680px;
+	/* height: 680px; */
 	position:relative;
 	background-position: center;
 }
@@ -1638,7 +1638,7 @@
 	Testimonial CSS
 =========================*/
 #testimonials {
-	background: url('http://via.placeholder.com/1500x800');
+	background: url('images/slider.jpg');
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -1687,10 +1687,10 @@
 	margin-top: 20px;
 }
 #testimonials .testimonial-info img {
-	width: 80px;
+	/* width: 150px; */
 	position: relative;
 	display: inline-block;
-	height: 80px;
+	/* height: 80px; */
 	border: 2px solid #fff;
 }
 #testimonials .testimonial-info h6 {
@@ -2572,7 +2572,7 @@
 	padding: 200px 0 70px;
 	background: #F8F8F8;
 	border-top: 3px solid;
-	background: url('http://via.placeholder.com/1500x800');
+	background: url('images/slider.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
