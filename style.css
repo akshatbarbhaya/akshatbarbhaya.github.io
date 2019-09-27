@@ -769,6 +769,9 @@
 #about-me .single-image{
 	position:relative;
 	overflow:hidden;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
 }
 #about-me .single-image:before {
 	position: absolute;
@@ -911,7 +914,7 @@
 	color:#fff;
 }
 #my-service .single-service p {
-	font-size: 14px;
+	font-size: 16px;
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	transition:all 0.3s ease;
@@ -1413,7 +1416,7 @@
 }
 #my-timeline .timeline-inner:before{
 	content: "";
-	*/-webkit-border-radius: 2px;
+	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	margin-left: -2px;
@@ -1714,7 +1717,7 @@
 #testimonials .rating li{
 	display:inline-block;
 }
-#testimonials .owl-nav{}
+/* #testimonials .owl-nav{} */
 #testimonials .owl-nav div {
 	position: absolute;
 	top: 50%;
@@ -2156,16 +2159,16 @@
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 }
-#blog .category ul li span{
+/* #blog .category ul li span{
 	width:26px;
 	height:26px;
 	border-radius:100%;
 	display:inline-block;
 	text-align:center;
-	float:right;
+	float: right;
 	color:#fff;
 	font-size:13px;
-}
+} */
 #blog .category ul li:last-child{
 	margin-bottom:0px;
 	padding-bottom: 0px;
@@ -2201,7 +2204,7 @@
 	position: relative;
 	float: left;
 }
-#blog.single .prev-next ul{}
+/* #blog.single .prev-next ul{} */
 #blog.single .prev-next ul li {
 	left: 0;
 	display: inline-block;
@@ -2701,11 +2704,25 @@
 /*=======================
   End Footer Top
 =========================*/
-
+.social {
+	margin: 24px 0;
+	padding: 0;
+	font-size: 30px;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+ }
+ .social li {
+	display: inline-block;
+	margin: 0 15px;
+	padding: 0;
+ }
+ .social li a { color: #fff; }
+ 
+ .social li a:hover { color: #4CAF50; }
+ 
 /*=======================
   Footer CSS
 =========================*/
-#footer {
+/* #footer {
 	background: #333;
 	padding: 15px 0 10px;
 	text-align: center;
@@ -2739,7 +2756,7 @@
 }
 #footer .copyright span{
 	margin:0px 5px;
-}
+} */
 
 /* #footer .viscount{
 	text-align: center;
@@ -2747,22 +2764,8 @@
 /* #footer .viscount p{
 	color:#fff;
 } */
-.social {
-   margin: 24px 0;
-   padding: 0;
-   font-size: 30px;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
-}
-.social li {
-   display: inline-block;
-   margin: 0 15px;
-   padding: 0;
-}
-.social li a { color: #fff; }
-.social li a:hover { color: #4CAF50; }
 
-
-#footer .social {
+/* #footer .social {
 	text-align: right;
 }
 #footer .social li{
@@ -2774,7 +2777,125 @@
 	line-height: 28px;
 	font-size:25px;
 	color: #fff;
-}
+} */
 /*=======================
   End Footer
 =========================*/
+
+/*=======================
+  Footer CSS
+=========================*/
+#footer {
+	background: #333;
+	padding: 15px 0 10px;
+	text-align: center;
+	position: relative;
+}
+#footer .arrow a {
+	font-size: 30px;
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	color: #fff;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 100%;
+	margin-left: -22px;
+	display: block;
+	padding: 0;
+	z-index: 99;
+}
+#footer .arrow a:hover {
+	background:#333;
+}
+#footer .copyright{
+	padding:5px 0;
+	text-align:left;
+}
+#footer .copyright p{
+	color:#fff;
+	margin:0;
+}
+#footer .copyright span{
+	margin:0px 5px;
+}
+#footer .social1 {
+	text-align: right;
+}
+#footer .social1 li{
+	margin-right:15px;
+	display:inline-block;
+}
+#footer .social1 li a {
+	display: block;
+	line-height: 28px;
+	font-size:15px;
+	color: #fff;
+}
+
+#footer .copyright a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#footer .copyright a:hover {
+	color: #4CAF50;
+}
+
+#footer .social1 li a { color: #fff; }
+ 
+#footer .social1 li a:hover { color: #4CAF50; }
+
+/*=======================
+  End Footer
+=========================*/
+
+
+.something {
+    display: inline-block;
+	/* width: 320px; */
+	margin: 10px;
+    vertical-align: top;
+}
+
+
+
+/* line 1, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+.skill_tab {
+	background-color: #20738D;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 25%;
+		-ms-flex: 0 0 25%;
+			flex: 0 0 25%;
+	text-align: center;
+	padding: 15px 0;
+	-webkit-transition: background 1s;
+	transition: background 1s;
+	color: white; }
+  
+  /* line 9, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+  .skill_tab.active {
+	background-color: #2D859E; }
+  
+  /* line 12, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+  .skill_tab:hover {
+	background-color: #2D859E; }
+  
+  /* line 15, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+  .skill_tab:first-child {
+	border-radius: 10px 0 0 0; }
+  
+  /* line 18, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+  .skill_tab:last-child {
+	border-radius: 0 10px 0 0; }
+  
+  /* line 21, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+  .skill_tab-background {
+	background-color: rgba(67, 144, 168, 0.7);
+	padding: 30px 0px; }
+
+
+
+	.section-blank .skill_tab-content {
+		color: white; }
